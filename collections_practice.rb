@@ -28,13 +28,23 @@ def reverse_array(array)
   array.reverse
 end
   
-def kesha_maker(array)
-  $_array = [ ]
+# def kesha_maker(array)
+#   $_array = [ ]
   
-  array.each {|element| $_array << element}
-  $_array.each {|string| string[2] = "$"}
+#   array.each {|element| $_array << element}
+#   #$_array.each {|string| string[2] = "$"}
   
-  $_array
+#   $_array
+#   binding.pry
+# end
+
+def kesha_maker(array) 
+  new_array = []
+  array.each do |string| 
+    new_array << string[2] = "$"
+  end
+  new_array
+  binding.pry
 end
 
 def find_a(array)
